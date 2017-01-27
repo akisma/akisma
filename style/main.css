@@ -1,0 +1,163 @@
+body {
+	font-family: "roboto";
+	padding: 0;
+	margin: 0;
+	background-color: gray;
+}
+
+a {
+	color: rgb(32, 84, 81);
+	font-weight: 800;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+h1 {
+	font-family: bungee;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 4em;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-family: bungee;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.5em;
+	margin-top: 0;
+}
+
+h3 {
+
+}
+
+ul {
+
+}
+
+li {
+
+}
+
+p {
+
+}
+
+.new {
+	background: transparent url('../img/wcwt-sebastian-web.jpg') 0 0 no-repeat;
+	background-size: cover;
+	width: 100%;
+    min-width: 1100px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.new .flex-container > * {
+	margin: 1em 0 1em 0;
+	padding: 1em 2em;
+	background: rgba(106, 191, 185, .3);
+	width: 100%;
+}
+
+.header {
+	padding: 2.5em 0 0 0;
+	margin: 0 0 0 5em;
+	background: none;
+	display: block;
+}
+	
+	.header h2 {
+		margin-left: .5em;
+	}
+
+.flex-container {
+	width: 30%;
+	margin-left: 5em;
+	display: inline-flex;
+    flex-direction: column;
+}
+
+	.flex-container li {
+  		list-style-type: none;
+  	}
+
+.mobile-cover {
+	display: none;
+}
+
+.listen {
+
+}
+
+	.listen h3 {
+		margin-top: .7em;
+	}
+
+.subscribe {
+
+}
+
+.artist-statement {
+
+}
+
+.other {
+
+}
+
+@media only screen 
+  and (max-device-width: 737px) { 
+  	body { font-size: 200%; }
+
+  	.new {
+  		background: transparent url('../img/wcwt-sebastian-bg.png') 0 0 no-repeat;
+		background-size: cover;
+		width: 100%;
+		min-width: unset;
+		max-width: unset;
+  	}
+
+  	.mobile-cover {
+  		background: transparent url('../img/wcwt-hand-title-mobile.jpg') 0 0 no-repeat;
+		background-size: contain;
+		width: 69%;
+		margin: 0 auto 1em auto;
+		display: block;
+		height: 73vw;
+		border: 1px solid gray;
+  	}
+
+  	.header {
+  		text-align: center;
+  		padding: 0;
+  		margin: 0;
+
+  	}
+
+  		.header h1 {
+  			font-size: 3em;
+  		}
+
+  		.header h2 {
+  			font-size: 1.25em;
+  		}
+
+  	.flex-container {
+  		width: 80%;
+  		margin: 0 auto;
+  		overflow: hidden;
+  		display: flex;
+  	}
+
+  	form input {
+  		font-size: 1em;
+  	}
+
+  	form input[type="submit"] {
+  		background: #ccc;
+  		border: 1px solid gray;
+  		padding: .4em;
+  	}
+}
+
