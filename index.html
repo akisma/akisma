@@ -1,152 +1,141 @@
 <html>
-	<head>
-		<title>JESS JACOBS WINS</title>
-		<link href="style/main.css" rel="stylesheet" type="text/css">
-		<script src="https://use.typekit.net/aun5wnw.js"></script>
-		<script>try{Typekit.load({ async: true });}catch(e){}</script>
-	</head>
-	<body>
-		<div class="new">
-			<div class="header">
-				<h1>JESS JACOBS</h1>
-				<h2>Who Can We Trust? EP OUT NOW</h2>
-			</div>
-			<div class="mobile-cover">
-				<img alt="hand title" src="img/wcwt-hand-title-mobile.jpg" style="display: none;" />
-			</div>
-			<div class="flex-container">
-				<div class="listen">
-					<h3>Listen</h3>
-					<ul>
-						<li><a href="https://soundcloud.com/jessjacobswins">soundcloud - latest experiments</a></li>
-						<li><a href="https://jessjacobs.bandcamp.com/album/who-can-we-trust-ep">Who Can we Trust? EP: bandcamp</a></li>
-						<li><a href="https://www.youtube.com/channel/UCX1YyIGdBRq3kX_8GNLOSoQ">youtube 1</a> - <a href="https://www.youtube.com/channel/UCJSTW4W-8XpSZ56HU35EgIQ">youtube 2</a></li>
-					</ul>
-					
-				</div>
-				<div class="subscribe">
-					<h3>Stay in touch</h3>
-					<ul>
+<head>
+	<style type="text/css">
+			body {
+				margin: 0;
+			}
 
-						<li><a href="http://www.instagram.com/jessjacobswins">instagram</a></li>
-						<li><a href="http://www.twitter.com/akisma">twitter</a></li>
-						<li><a href="http://www.facebook.com/jessjacobswins">facebook</a></li>
-						<p></p>
-						<li>
+			.fullscreen-bg {
+			    position: fixed;
+			    top: 0;
+			    right: 0;
+			    bottom: 0;
+			    left: 0;
+			    overflow: hidden;
+			    z-index: -100;
+			}
 
-							<div id="mc_embed_signup">
-							<form action="//jessjacobswins.us14.list-manage.com/subscribe/post?u=5e9bfc9477c9896e6e1610edc&amp;id=d7bccd6499" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-							    <div id="mc_embed_signup_scroll">
-								
-							<div class="mc-field-group">
-								<label for="mce-EMAIL">Email Address  
-							</label>
-								<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-							</div>
-								<div id="mce-responses" class="clear">
-									<div class="response" id="mce-error-response" style="display:none"></div>
-									<div class="response" id="mce-success-response" style="display:none"></div>
-								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-							    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5e9bfc9477c9896e6e1610edc_d7bccd6499" tabindex="-1" value=""></div>
-							    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-							    </div>
-							</form>
-							</div>
-							<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-							<!--End mc_embed_signup-->
-							
+			.fullscreen-bg__video {
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    height: 100%;
+			    width: 100%;
+			}
 
-						</li>
-					</ul>
-				</div>
-				<!-- <div class="artist-statement">
-					<p>This is a challenging listen. I humbly request that you listen to it all at once, as it is a single piece in three movements.
+			.content {
+				z-index: 999;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
 
-					<P>It is borne of, and is a reflection of the intense anxiety and confusion we are faced with right now in our country and the world. It is purposefully uncomfortable, unmusical at times. It implores us to stay alert, keep our eyes and ears open, and question everything until we find the truth.
+			.content a {
+				font-size: 2em;
+				text-shadow: 36px 27px 10px rgba(256,256,256,1);
+	    		background: rgba(256,256,256,0.5);
+			}
 
-					<p>David Lee made some incredible art to go with it; he sees things in the music that I didn't even consciously know I constructed.
+			h1 {
+				position: absolute;
+			    top: 1em;
+			    font-size: 3em;
+			    transform: rotate(20deg);
+			    background-color: orange;
+			    padding: .2em;
+			    right: 0.5em;
+			}
 
-					<p>I knew right away, on 11/9, that this was what I could offer the world. It finished itself in a week after 8 years of incompletion. And I wanted to wrap it in bookends that would enhance it.
+			a:hover {
+				background-color: orange;
+			}
 
-					<p>Truth and information are essential to our functioning as a world community, and it's increasingly hard to trust our sources. We hear from bottom lines instead of professionalism. We are manipulated at our very core, robbed of any chance to do The Right Thing because of bad intel. It must be stopped. Good sources must be protected.
+			h2 {
+				background-color: rgba(176,198,237,.7);
+				font-size: 3em;
+				display: inline-block;
+				margin-bottom: 0;
+			}
 
-					<p>There is an element of consolation and compassion, too; our tendency is to panic, to suspect everyone in the room when we discover we've been lied to. It's ok. Not everyone is a liar. We can't let this behavior shut us down, turn us cold, or worse, turn us against each other. Yes, we will get burned. But our courage shows when we continue to reach out and trust each other. They lie to us now because they were lied to and now they are scared and shut down. We mustn't let the same thing happen to us. We are stronger than that. We are stronger than this. You are stronger than this.</p>
-				</div> -->
-				<div class="other">
-					<h3>Other projects I'm involved in</h3>
-					<ul>
-						<li><a href="http://www.orchidsband.com">ORCHIDS</a></li>
-						<li><a href="http://www.rrrright.com/">rrrright?</a></li>
-						<li><a href="http://www.bandwithouthands.com">Band Without Hands</a></li>
-						<li><a href="http://www.madamegandhi.com/">Madame Gandhi</a></li>
-					</ul>
-				</div>
+			h3 {
+				font-size: 2em;
+				background-color: rgba(176,198,237,.7);
+			}
 
-				<div class="art">
-					<p>Art by Dave Lee</p>
-				</div>
-			</div>
+			@media (min-aspect-ratio: 16/9) {
+			  .fullscreen-bg__video {
+			    height: 300%;
+			    top: -100%;
+			  }
+			}
+
+			@media (max-aspect-ratio: 16/9) {
+			  .fullscreen-bg__video {
+			    width: 300%;
+			    left: -100%;
+			  }
+			}
+	</style>
+	<title>JESS JACOBS WINS</title>
+</head>
+<body>
+	<div class="fullscreen-bg">
+	    <video loop muted autoplay class="fullscreen-bg__video">
+	        <source src="static/glitch-fire.webm" type="video/webm">
+	    </video>
+	</div>
+    <h1>Jess Jacobs</h1>
+    <div class="content">
+	    <h3>Listen</h3>
+		<ul>
+			<li><a href="https://soundcloud.com/jessjacobswins">soundcloud - latest experiments</a></li>
+			<li><a href="https://jessjacobs.bandcamp.com/album/who-can-we-trust-ep">Who Can we Trust? EP: bandcamp</a></li>
+			<li><a href="https://www.youtube.com/channel/UCX1YyIGdBRq3kX_8GNLOSoQ">youtube 1</a> - <a href="https://www.youtube.com/channel/UCJSTW4W-8XpSZ56HU35EgIQ">youtube 2</a></li>
+		</ul>
+		<div class="subscribe">
+			<h3>Stay in touch</h3>
+			<ul>
+
+				<li><a href="http://www.instagram.com/jessjacobswins">instagram</a></li>
+				<li><a href="http://www.twitter.com/akisma">twitter</a></li>
+				<li><a href="http://www.facebook.com/jessjacobswins">facebook</a></li>
+				<li>
+
+					<div id="mc_embed_signup">
+					<form action="//jessjacobswins.us14.list-manage.com/subscribe/post?u=5e9bfc9477c9896e6e1610edc&amp;id=d7bccd6499" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					    <div id="mc_embed_signup_scroll">
+						
+					<div class="mc-field-group">
+						<a><label for="mce-EMAIL">mailing list:  </label>
+						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"></a>
+					</div>
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5e9bfc9477c9896e6e1610edc_d7bccd6499" tabindex="-1" value=""></div>
+					    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+					    </div>
+					</form>
+					</div>
+					<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+					<!--End mc_embed_signup-->
+				</li>
+			</ul>
 		</div>
-
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-91255505-1', 'auto');
-		  ga('send', 'pageview');
-
-		</script>
-
-
-<!--
-		<div class="old">
-			<h1>HEY!</h1>
-			<h2>It's Jess.</h2>
-			<p>This will be cool soon (1/27). Yes, it's intentionally sloppy.</p>
-			<p>Please stay in touch below to see the release! <a href="https://wearenottrump.bandcamp.com/track/who-can-we-trust">Here's the single from the upcoming release.</a></p>
-			<p>, 
-			
-			<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-			<style type="text/css">
-				#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-				#mc_embed_signup form { padding: 1%; }
-				/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-				   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-			</style>
-			<div id="mc_embed_signup">
-			<form action="//jessjacobswins.us14.linkst-manage.com/subscribe/post?u=5e9bfc9477c9896e6e1610edc&amp;id=d7bccd6499" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-			    <div id="mc_embed_signup_scroll">
-				<h2>Subscribe to my mailing list!?</h2>
-			<div class="mc-field-group">
-				<label for="mce-EMAIL">Email Address </label>
-				<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-			</div>
-			<div class="mc-field-group">
-				<label for="mce-FNAME">First Name </label>
-				<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-			</div>
-			<div class="mc-field-group">
-				<label for="mce-LNAME">Last Name </label>
-				<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-			</div>
-				<div id="mce-responses" class="clear">
-					<div class="response" id="mce-error-response" style="display:none"></div>
-					<div class="response" id="mce-success-response" style="display:none"></div>
-				</div>    
-			    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5e9bfc9477c9896e6e1610edc_d7bccd6499" tabindex="-1" value=""></div>
-			    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-			    </div>
-			</form>
-			</div>
-			<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-			
-
-			<h2>here's a cool picture i made for you:</h2>
-			<img src="glitch-painting.jpg" alt="glitch painting" width="900" />
-			<h2>bye!</h2>
+		<div>
+			<h3>I make music</h3>
+			<h3>I am a live sound engineer</h3>
+			<h3>I am a playback engineer</h3>
+			<h3>I am a MIDI/OSC consultant</h3>
+			<h3>I DJ</h3>
+			<h3>I am an aux musician</h3>
+			<h3>hit me on <a href="http://www.instagram.com/jessjacobswins">insta</a></h3>
 		</div>
-		-->
-	</body>
+		<div>
+			<h3>This style of website is called brutalist</h3>
+			<h3>i can make you one too</h3>
+		</div>
+	</div>
+</body>
 </html>
